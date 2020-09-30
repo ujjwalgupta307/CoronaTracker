@@ -23,13 +23,14 @@ const lineChart= (
             datasets: [{
                 data: dailyData.map(({confirmed}) => confirmed),
                 label: 'Infected',
-                borderColor: '#3333ff',
+                borderColor: 'rgba(8, 236, 19, 0.5)',
                 fill: true,
             },{
                 data: dailyData.map(({deaths}) => deaths),
+                
                 label: 'Deaths',
-                borderColor: 'red',
-                borderColor: 'rgba(255,0,0,0.5)',
+                borderColor: 'rgba(231, 15, 15, 0.5)',
+                backgroundColor: 'rgba(240, 81, 81, 0.5)',
                 fill: true,
             },],
         }}
@@ -48,13 +49,16 @@ const barChart = (
                     'rgba(8, 236, 19, 0.5)',
                     'rgba(241, 166, 4, 0.5)',
                     'rgba(231, 15, 15, 0.5)',
+                    // 'rgba(8, 236, 19, 0.5)',
+                    // 'rgba(241, 166, 4, 0.5)',
+                    // 'rgba(231, 15, 15, 0.5)',
                 ],
                 data: [confirmed.value,recovered.value,deaths.value]
             }]
         }}
         options={{
             legend: {display:false},
-            title: {display:true,text:`Current state in${country}`},
+            title: {display:true,text:`Current state: ${country}`},
         }}
         />
     ) : null

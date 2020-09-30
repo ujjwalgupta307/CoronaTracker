@@ -13,7 +13,7 @@
     border-bottom: 10px solid rgba(241, 166, 4, 0.5);
 }
 .deaths {
-    border-bottom: 10px solid rgba(231, 15, 15, 0.5);
+    border-bottom: 10px solid rgba(231, 15, 15, 0.5) ;
 }
 
 @media (max-width: 770px) {
